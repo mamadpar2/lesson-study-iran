@@ -1,0 +1,261 @@
+.province-directory { position:relative; z-index:1; padding-top:3rem; padding-bottom:5rem; }
+.province-directory-shell { border:1px solid rgba(234,190,99,.18); border-radius:30px; padding:clamp(1rem,3vw,2.2rem); background:linear-gradient(145deg,rgba(18,28,47,.97),rgba(9,19,34,.94)); box-shadow:0 22px 70px rgba(0,0,0,.24); }
+.province-directory-heading {display:flex; align-items:center; gap:1rem; margin-bottom:1.5rem; color:white}
+.province-heading-icon,.province-hero-icon { display:grid; place-items:center; width:52px;height:52px;flex:none;border-radius:17px;color:#f3ca80;background:rgba(234,179,73,.12);border:1px solid rgba(234,179,73,.25); }
+.province-overline {color:#ddbd7d;font-size:.75rem;letter-spacing:.03em;margin-bottom:.35rem}
+.province-directory-heading h2 {font-size:1.5rem;line-height:1.5}.province-directory-heading p:last-child {color:#a5b4c7;font-size:.82rem; margin-top:.3rem}
+.province-map-layout {display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.35fr);gap:1rem;direction:ltr}
+.province-map-panel,.province-list-panel {direction:rtl;min-width:0;border:1px solid rgba(255,255,255,.08);border-radius:22px;background:rgba(255,255,255,.025);padding:1rem}
+.province-map-caption {display:flex;align-items:center;justify-content:center;gap:.4rem;min-height:2rem;color:#b9cbd4;font-size:.78rem}.province-map {display:block;width:100%;max-height:400px;margin:auto;direction:ltr}.province-map path {fill:#264856;stroke:#729995;stroke-width:1.3;cursor:pointer;transition:fill .16s}.province-map path:hover,.province-map path:focus {fill:#d19a4b;outline:none;stroke:#ffdf9c;stroke-width:2.8}
+.province-list-header {display:flex;justify-content:space-between;align-items:center;gap:.5rem; margin-bottom:.9rem;color:#f7f2e9}.province-list-header span {font-size:.7rem;color:#9baab8}.province-list {display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.5rem;max-height:400px;overflow-y:auto;padding-left:.2rem}.province-list-item {text-align:right;display:flex;min-width:0;min-height:66px;flex-direction:column;justify-content:center;gap:.35rem;padding:.55rem .65rem;border-radius:12px;border:1px solid rgba(255,255,255,.07);background:rgba(255,255,255,.035);color:#e8edf1;font-size:.78rem;transition:.2s}.province-list-item:hover,.province-list-item:focus-visible {border-color:#cd9b59;background:rgba(207,160,83,.1)}.province-list-count {display:flex;align-items:center;gap:.25rem;color:#b9a783;font-size:.67rem}.province-directory-note {color:#91a2af;font-size:.73rem;margin-top:1rem}.province-tehran-choice {border:1px solid #987a45;padding:.8rem;border-radius:14px;color:#fff;font-size:.8rem}.province-tehran-choice>div {display:flex;flex-wrap:wrap;gap:.5rem;margin-top:.6rem}.province-tehran-choice button {background:#364c53;padding:.5rem;border-radius:8px}
+.province-public {padding-top:2rem;padding-bottom:5rem;min-height:70vh}.province-public-hero {text-align:center;margin:2rem auto 2.5rem}.province-hero-icon {margin:0 auto 1rem}.province-public-hero h1 {font-size:clamp(1.6rem,4vw,2.5rem);color:#f6dfae}.province-public-hero>p:not(.province-overline) {color:#a9b9c9;margin:.6rem 0 1rem}.province-total {display:inline-flex;color:#f5dcae;background:rgba(207,160,83,.1);border:1px solid rgba(207,160,83,.2);border-radius:999px;padding:.4rem .85rem;font-size:.75rem}.province-tabs {display:flex;gap:.5rem;overflow-x:auto;padding-bottom:.8rem;margin-bottom:1.5rem;scrollbar-width:thin}.province-tabs button {flex:none;display:flex;align-items:center;gap:.45rem;border:1px solid rgba(255,255,255,.12);padding:.7rem .8rem;border-radius:12px;color:#cbd5e1;background:rgba(255,255,255,.035);font-size:.78rem}.province-tabs button[aria-pressed=true] {background:#ad7636;border-color:#d8b26c;color:#fff}.province-tabs button span {background:rgba(0,0,0,.17);border-radius:100px;padding:.12rem .4rem}
+.province-content-grid {display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1rem}.province-content-card {text-align:right;min-width:0;border:1px solid rgba(255,255,255,.1);background:linear-gradient(150deg,rgba(40,55,72,.86),rgba(18,28,44,.9));border-radius:20px;padding:1.25rem;display:flex;flex-direction:column;gap:.8rem;min-height:185px;transition:.2s}.province-content-card:hover,.province-content-card:focus-visible {border-color:#bc9960;transform:translateY(-3px)}.province-card-top,.province-card-foot {display:flex;align-items:center;justify-content:space-between;gap:.5rem;color:#bdcbd5;font-size:.7rem}.province-card-top>span {color:#e5c991;background:rgba(229,201,145,.08);padding:.3rem .6rem;border-radius:99px}.province-content-card h2 {color:#fff;font-size:1.05rem;line-height:1.8}.province-content-card>p {color:#aab9c7;font-size:.8rem;line-height:1.9;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}.province-card-foot {margin-top:auto}.province-card-foot span {display:flex;align-items:center;gap:.3rem}.province-empty {border:1px dashed rgba(255,255,255,.15);border-radius:20px;padding:3rem 1rem;text-align:center;color:#93a7b6}.province-empty svg {margin:0 auto 1rem;color:#cfa65f}.province-empty h2 {color:#e0e8ed;font-size:1rem}.province-empty p {font-size:.8rem;margin-top:.6rem}
+.province-modal-overlay {position:fixed;inset:0;z-index:90;background:rgba(0,5,15,.8);backdrop-filter:blur(5px);display:flex;align-items:center;justify-content:center;padding:12px}.province-modal {width:min(680px,100%);max-height:90dvh;overflow:auto;border-radius:22px;border:1px solid #526072;background:#121f30;color:#fff;box-shadow:0 24px 80px #0009;direction:rtl}.province-modal header {display:flex;justify-content:space-between;align-items:flex-start;gap:1rem;padding:1.2rem;background:linear-gradient(120deg,#385b60,#194d4e)}.province-modal header span {font-size:.72rem;color:#bddbd6}.province-modal header h2 {font-size:1.15rem;margin-top:.4rem;line-height:1.7}.province-modal header button {padding:.55rem;background:#ffffff1c;border-radius:10px}.province-modal-body {padding:1.3rem}.province-modal-meta {display:flex;align-items:center;gap:.5rem;color:#dfc698;font-size:.8rem}.province-modal-description {white-space:pre-wrap;color:#d2dce4;font-size:.9rem;line-height:2.1;margin-top:1rem}.province-files {margin-top:1.2rem;border:1px solid #ffffff1a;border-radius:15px;padding:1rem}.province-files h3 {display:flex;gap:.5rem;align-items:center;margin-bottom:.6rem}.province-files button {display:flex;justify-content:space-between;align-items:center;gap:1rem;width:100%;text-align:right;padding:.8rem;border-top:1px solid #ffffff12;color:#d6e9ec;font-size:.8rem}.province-files button span:last-child {display:flex;align-items:center;gap:.3rem;color:#7cdbd3;white-space:nowrap}.province-related-link {display:inline-flex;gap:.4rem;color:#7cdbd3;margin-top:1rem;font-size:.85rem}
+@media(max-width:800px) {.province-map-layout {grid-template-columns:1fr}.province-map {max-height:310px}.province-list {max-height:none;grid-template-columns:repeat(3,minmax(0,1fr))}.province-content-grid {grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:520px) {.province-directory {padding-top:1rem;padding-bottom:3rem}.province-list {grid-template-columns:repeat(2,minmax(0,1fr))}.province-content-grid {grid-template-columns:1fr}.province-directory-heading h2 {font-size:1.2rem}.province-list-item {min-height:62px}.province-public {padding-top:1rem}.province-modal-meta {flex-wrap:wrap}}
+
+.province-map .province-water { fill:#2877a9; stroke:#72bce0; stroke-width:1; cursor:default; pointer-events:none; }
+.province-map .province-water-fill { stroke:none; }
+@font-face { font-family:'Iran Nastaliq'; src:url('/fonts/IranNastaliq.woff') format('woff'); font-weight:400; font-style:normal; font-display:swap; }
+.province-map .province-sea-label { fill:#fff; font-family:'Iran Nastaliq','B Nazanin',serif; font-weight:bold; pointer-events:none; user-select:none; paint-order:stroke; stroke:rgba(3,42,92,.55); stroke-width:3px; }
+.province-map .province-sea-label-caspian { font-size:33px; }
+.province-map .province-sea-label-gulf { font-size:40px; }
+.province-map-wrap { position:relative; }
+.province-map-tooltip { position:absolute; z-index:30; pointer-events:none; background:rgba(15,23,42,.92); border:1px solid rgba(255,255,255,.25); backdrop-filter:blur(10px); color:#fff; padding:8px 16px; border-radius:12px; font-family:'B Titr','B Nazanin',sans-serif; font-size:1rem; box-shadow:0 10px 30px rgba(0,0,0,.5); transform:translate(-50%,-135%); white-space:nowrap; }
+
+/* Provincial directory: restrained gold-on-navy map and linked compact cards. */
+.province-map-panel { display:flex; flex-direction:column; justify-content:center; background:radial-gradient(ellipse at 50% 45%,rgba(194,151,82,.075),transparent 65%),rgba(8,17,31,.48); }
+.province-map path[data-map-province] { fill:#27384c; stroke:#9b825f; stroke-width:1.25; transition:fill .25s ease,stroke .25s ease,filter .25s ease; }
+.province-map path[data-map-province]:hover,.province-map path[data-map-province]:focus,.province-map path[data-map-province][data-highlighted=true] { fill:#c59a57; stroke:#f8dc9d; stroke-width:2.4; filter:drop-shadow(0 0 5px rgba(233,190,103,.55)); outline:none; }
+.province-list-panel { background:rgba(8,17,31,.43); padding:1.2rem; }
+.province-list-header { margin-bottom:1rem; }
+.province-list-header h3 { font-size:1.05rem; }
+.province-list-header span { color:#b5a58d; }
+.province-list-eyebrow { color:#b99865; font-size:.68rem; margin-bottom:.3rem; }
+.province-list { position:relative; display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:.4rem; max-height:none; overflow:visible; padding:0; }
+.province-list-highlight { position:absolute; left:0; top:0; z-index:0; pointer-events:none; border:1px solid rgba(227,190,128,.48); border-radius:11px; background:linear-gradient(110deg,rgba(194,147,75,.19),rgba(194,147,75,.07)); box-shadow:0 4px 16px rgba(0,0,0,.15); transition:transform .25s ease,width .25s ease,height .25s ease,opacity .15s ease; }
+.province-list-item { position:relative; z-index:1; min-height:50px; display:grid; grid-template-columns:minmax(0,1fr) auto; grid-template-rows:auto auto; align-content:center; column-gap:.25rem; row-gap:.18rem; padding:.45rem .65rem; background:rgba(255,255,255,.025); border:1px solid rgba(255,255,255,.065); border-radius:11px; font-size:.84rem; }
+.province-list-item:hover,.province-list-item:focus-visible,.province-list-item[data-highlighted=true] { background:transparent; border-color:transparent; transform:none; outline:none; }
+.province-list-item:focus-visible { outline:2px solid #e3bd7d; outline-offset:2px; }
+.province-list-name { min-width:0; line-height:1.35; color:#f4eee5; grid-column:1; }
+.province-list-count { grid-column:1; color:#bca985; font-size:.7rem; line-height:1.2; }
+.province-list-arrow { grid-column:2; grid-row:1 / 3; align-self:center; color:#bc9a68; transition:transform .2s ease,color .2s ease; }
+.province-list-item[data-highlighted=true] .province-list-arrow,.province-list-item:hover .province-list-arrow { color:#f7d99c; transform:translate(-2px,-2px); }
+@media(max-width:800px) { .province-list { grid-template-columns:repeat(3,minmax(0,1fr)); } }
+@media(max-width:520px) { .province-list { grid-template-columns:repeat(2,minmax(0,1fr)); } .province-list-item { min-height:48px; } }
+@media(prefers-reduced-motion:reduce) { .province-list-highlight,.province-map path[data-map-province],.province-list-arrow { transition:none; } }
+
+.province-list-item[data-highlighted=true] { background:rgba(194,147,75,.06); }
+/* Override the site's general readability minimum only to compact the line-height;
+   keep labels at least 15px so the small cards remain readable. */
+.dusk-app-root .province-list-item .province-list-name,.dusk-app-root .province-list-item .province-list-count { font-size:15px !important; line-height:1.25; }
+
+/* The map gets a full-width stage so the four original logos remain legible. */
+.province-map-layout { grid-template-columns:minmax(0,1fr); }
+.province-map-panel { padding:clamp(1rem,3vw,2rem); }
+.province-map-composition { width:100%; display:grid; grid-template-columns:minmax(100px,160px) minmax(0,650px) minmax(100px,160px); justify-content:center; align-items:center; gap:clamp(.65rem,2.5vw,2.6rem); direction:ltr; }
+.province-map-composition .province-map-wrap { min-width:0; }
+.province-map-composition .province-map { width:100%; max-height:520px; }
+.province-logo-rail { display:flex; flex-direction:column; justify-content:center; gap:clamp(1rem,3vw,2rem); direction:rtl; }
+.province-logo-figure { display:flex; flex-direction:column; align-items:center; gap:.5rem; min-width:0; text-align:center; }
+.province-logo-pedestal { position:relative; display:flex; align-items:center; justify-content:center; width:min(100%,140px); aspect-ratio:1; padding:13%; overflow:hidden; border-radius:26px; background:linear-gradient(145deg,#fffefa,#e7e4dc); border:1px solid rgba(255,237,195,.8); box-shadow:0 10px 28px rgba(0,0,0,.26),0 0 0 4px rgba(202,164,95,.08); transition:transform .32s ease,box-shadow .32s ease; }
+.province-logo-pedestal::after { content:''; position:absolute; inset:0; pointer-events:none; background:linear-gradient(118deg,transparent 30%,rgba(255,255,255,.4) 50%,transparent 70%); transform:translateX(-130%); transition:transform .65s ease; }
+.province-logo-figure:hover .province-logo-pedestal { transform:translateY(-4px); box-shadow:0 16px 32px rgba(0,0,0,.3),0 0 20px rgba(220,176,99,.22); }
+.province-logo-figure:hover .province-logo-pedestal::after { transform:translateX(130%); }
+.province-logo-pedestal img { display:block; width:100%; height:100%; object-fit:contain; }
+.province-logo-figure figcaption { color:#d8c9b1; font-size:.76rem; line-height:1.6; max-width:155px; }
+.province-list { grid-template-columns:repeat(4,minmax(0,1fr)); }
+@media(max-width:800px) { .province-list { grid-template-columns:repeat(3,minmax(0,1fr)); } .province-map-composition { grid-template-columns:minmax(68px,115px) minmax(0,1fr) minmax(68px,115px); gap:.55rem; } .province-map-composition .province-map { max-height:460px; } .province-logo-pedestal { border-radius:20px; } }
+@media(max-width:520px) { .province-map-panel { padding:.75rem .3rem; } .province-map-composition { grid-template-columns:minmax(50px,68px) minmax(0,1fr) minmax(50px,68px); gap:.25rem; } .province-map-composition .province-map { max-height:none; } .province-logo-rail { gap:1.3rem; } .province-logo-pedestal { border-radius:14px; padding:9%; box-shadow:0 5px 14px #0004,0 0 0 2px rgba(202,164,95,.1); } .province-logo-figure { gap:.3rem; } .dusk-app-root .province-logo-figure figcaption { font-size:12px; line-height:1.35; } .province-list { grid-template-columns:repeat(2,minmax(0,1fr)); } }
+@media(prefers-reduced-motion:reduce) { .province-logo-pedestal,.province-logo-pedestal::after { transition:none; } .province-logo-figure:hover .province-logo-pedestal { transform:none; } }
+
+/* Logos are transparent and equally sized by the cropped visible artwork,
+   including the lettering within each image; preserve aspect ratios. */
+.province-logo-rail { gap:clamp(1.8rem,5vw,4rem); }
+.province-logo-figure { margin:0; }
+.province-logo-pedestal { width:min(100%,140px); aspect-ratio:1; padding:0; overflow:visible; background:none; border:0; border-radius:0; box-shadow:none; }
+.province-logo-pedestal::after { display:none; }
+.province-logo-pedestal img { width:100%; height:100%; object-fit:contain; filter:drop-shadow(0 0 1.5px rgba(255,255,255,.9)) drop-shadow(0 0 4px rgba(233,220,192,.3)); }
+.province-logo-figure:hover .province-logo-pedestal { box-shadow:none; transform:translateY(-4px); }
+@media(max-width:520px) { .province-logo-rail { gap:2rem; } .province-logo-pedestal { padding:0; border-radius:0; box-shadow:none; } }
+@media(prefers-reduced-motion:reduce) { .province-logo-figure:hover .province-logo-pedestal { transform:none; } }
+.province-logo-pedestal img { position:absolute; inset:0; }
+/* Transparent, color-adjusted logo art. Labels appear only on hover/focus/tap. */
+.province-logo-pedestal { cursor:pointer; appearance:none; }
+.province-logo-pedestal img { filter:drop-shadow(0 1px 2px rgba(0,0,0,.45)); }
+.province-logo-pedestal:focus-visible { outline:2px solid #e8c589; outline-offset:5px; border-radius:8px; }
+.province-logo-tooltip { position:absolute; z-index:40; bottom:calc(100% + 8px); left:50%; transform:translate(-50%,4px); width:max-content; max-width:min(300px,85vw); padding:7px 12px; border:1px solid rgba(235,201,136,.5); border-radius:10px; background:#15243a; color:#fff1d3; box-shadow:0 8px 24px #0008; font-family:'B Titr','B Nazanin',sans-serif; font-weight:700; font-size:15px !important; line-height:1.7; text-align:center; white-space:normal; pointer-events:none; opacity:0; visibility:hidden; transition:opacity .2s ease,transform .2s ease,visibility .2s; }
+.province-logo-pedestal:focus-visible .province-logo-tooltip,.province-logo-pedestal[data-tooltip-open=true] .province-logo-tooltip { opacity:1; visibility:visible; transform:translate(-50%,0); }
+@media(hover:hover) { .province-logo-pedestal:hover .province-logo-tooltip { opacity:1; visibility:visible; transform:translate(-50%,0); } }
+@media(max-width:650px) { .province-logo-rail--left .province-logo-tooltip { left:0; right:auto; transform:translate(0,4px); } .province-logo-rail--right .province-logo-tooltip { right:0; left:auto; transform:translate(0,4px); } .province-logo-rail--left .province-logo-pedestal:hover .province-logo-tooltip,.province-logo-rail--left .province-logo-pedestal:focus-visible .province-logo-tooltip,.province-logo-rail--left .province-logo-pedestal[data-tooltip-open=true] .province-logo-tooltip,.province-logo-rail--right .province-logo-pedestal:hover .province-logo-tooltip,.province-logo-rail--right .province-logo-pedestal:focus-visible .province-logo-tooltip,.province-logo-rail--right .province-logo-pedestal[data-tooltip-open=true] .province-logo-tooltip { transform:translate(0,0); } }
+@media(prefers-reduced-motion:reduce) { .province-logo-tooltip { transition:none; } }
+
+/* Put the four marks at the four corners of the map stage. Tooltips extend
+   inward, over the map, and have their own stacking layer above the SVG. */
+.province-logo-rail { align-self:stretch; justify-content:space-between; padding:.25rem 0; }
+.province-logo-figure { position:relative; z-index:1; }
+.province-logo-figure:hover,.province-logo-figure:focus-within { z-index:50; }
+.province-logo-tooltip { font-size:13px !important; line-height:1.55; top:50%; bottom:auto; width:max-content; max-width:min(270px,65vw); transform:translateY(-50%); }
+.province-logo-rail--left .province-logo-tooltip { left:calc(100% + 8px); right:auto; }
+.province-logo-rail--right .province-logo-tooltip { right:calc(100% + 8px); left:auto; }
+.province-logo-pedestal:hover .province-logo-tooltip,.province-logo-pedestal:focus-visible .province-logo-tooltip,.province-logo-pedestal[data-tooltip-open=true] .province-logo-tooltip { transform:translateY(-50%); }
+@media(max-width:650px) {
+  .province-logo-rail--left .province-logo-tooltip { left:calc(100% + 4px); right:auto; transform:translateY(-50%); }
+  .province-logo-rail--right .province-logo-tooltip { right:calc(100% + 4px); left:auto; transform:translateY(-50%); }
+  .province-logo-rail--left .province-logo-pedestal:hover .province-logo-tooltip,.province-logo-rail--left .province-logo-pedestal:focus-visible .province-logo-tooltip,.province-logo-rail--left .province-logo-pedestal[data-tooltip-open=true] .province-logo-tooltip,.province-logo-rail--right .province-logo-pedestal:hover .province-logo-tooltip,.province-logo-rail--right .province-logo-pedestal:focus-visible .province-logo-tooltip,.province-logo-rail--right .province-logo-pedestal[data-tooltip-open=true] .province-logo-tooltip { transform:translateY(-50%); }
+}
+.dusk-app-root .province-logo-pedestal .province-logo-tooltip { font-size:13px !important; line-height:1.55; }
+@media(max-width:650px) { .dusk-app-root .province-logo-pedestal .province-logo-tooltip { max-width:min(230px,55vw); } }
+
+/* Bottom logo dock: no backing on the marks themselves. All have the same
+   square base size; proportional fitting keeps each official mark undistorted. */
+.province-map-composition { display:block; max-width:650px; margin-inline:auto; }
+.province-map-composition .province-map { max-height:520px; }
+.mac-dock-wrap { position:relative; z-index:5; display:flex; justify-content:center; width:fit-content; max-width:100%; margin:0 auto; }
+.mac-dock { --logo-size:clamp(52px,15vw,86px); direction:rtl; display:flex; align-items:flex-end; justify-content:center; gap:clamp(8px,2vw,16px); padding:12px clamp(12px,2.5vw,20px); border:1px solid rgba(220,190,139,.28); border-radius:22px; background:linear-gradient(145deg,rgba(47,60,76,.88),rgba(19,29,44,.92)); box-shadow:0 12px 25px #0006,inset 0 1px rgba(255,255,255,.08); backdrop-filter:blur(14px); }
+.mac-dock-item { position:relative; display:flex; align-items:center; justify-content:center; flex:none; width:var(--logo-size); height:var(--logo-size); padding:0; border:0; background:transparent; border-radius:8px; cursor:pointer; }
+.mac-dock-item img { display:block; width:100%; height:100%; object-fit:contain; transform-origin:center bottom; transition:transform .2s cubic-bezier(.2,.8,.2,1); filter:drop-shadow(0 2px 2px rgba(0,0,0,.4)); pointer-events:none; }
+.mac-dock-item:focus-visible { outline:2px solid #edc881; outline-offset:3px; }
+.mac-dock-item[data-open=true]::after { content:''; position:absolute; bottom:-7px; left:50%; width:5px; height:5px; transform:translateX(-50%); border-radius:50%; background:#f3dfb5; }
+.mac-dock-label { position:absolute; z-index:60; bottom:calc(100% + 8px); left:50%; transform:translate(-50%,4px); max-width:min(280px,85vw); width:max-content; padding:7px 12px; border:1px solid rgba(235,201,136,.5); border-radius:10px; background:#15243a; color:#fff1d3; font-family:'B Titr','B Nazanin',sans-serif; text-align:center; white-space:normal; pointer-events:none; opacity:0; visibility:hidden; transition:opacity .2s ease,transform .2s ease,visibility .2s; }
+.mac-dock-label[data-visible=true] { opacity:1; visibility:visible; transform:translate(-50%,0); }
+.dusk-app-root .mac-dock-label { font-size:13px !important; line-height:1.55; }
+@media(max-width:520px) { .province-map-composition .province-map { max-height:350px; } .mac-dock { --logo-size:clamp(48px,14vw,64px); padding:9px 12px; gap:8px; border-radius:17px; } }
+@media(prefers-reduced-motion:reduce) { .mac-dock-item img { transition:none; transform:none !important; } .mac-dock-label { transition:none; } }
+
+/* Compact horizontal dock on the right of the map, with Fars just below it. */
+.province-map-composition { display:grid; direction:ltr; grid-template-columns:minmax(0,650px) minmax(0,290px); align-items:center; justify-content:center; gap:clamp(10px,2vw,24px); max-width:980px; }
+.province-logo-side { min-width:0; display:flex; flex-direction:column; align-items:center; gap:16px; direction:rtl; }
+.province-logo-side .mac-dock { --logo-size:clamp(43px,4.5vw,54px); gap:5px; padding:9px; border-radius:15px; }
+.province-fars-logo .mac-dock { padding:7px; }
+.province-logo-side .mac-dock-label { left:auto; right:0; transform:translateY(4px); max-width:min(270px,85vw); }
+.province-logo-side .mac-dock-label[data-visible=true] { transform:translateY(0); }
+@media(max-width:700px) {
+  .province-map-composition { grid-template-columns:minmax(0,1fr) minmax(0,156px); gap:4px; }
+  .province-logo-side { gap:10px; }
+  .province-logo-side .mac-dock { --logo-size:32px; gap:3px; padding:5px; border-radius:12px; }
+  .province-fars-logo .mac-dock { padding:5px; }
+  .province-map-composition .province-map { max-height:none; }
+}
+@media(max-width:350px) { .province-map-composition { grid-template-columns:minmax(0,1fr) 140px; } .province-logo-side .mac-dock { --logo-size:28px; gap:3px; padding:5px; } }
+/* On narrow touch screens, retain a usable full-size map and right-align the
+   small dock immediately below it instead of shrinking tappable provinces. */
+@media(max-width:600px) {
+ .province-map-composition { grid-template-columns:minmax(0,1fr); gap:10px; }
+ .province-logo-side { justify-self:end; }
+ .province-logo-side .mac-dock { --logo-size:44px; gap:4px; padding:6px; }
+}
+
+/* One vertical dock, to the right of the map at every screen width. */
+.province-map-composition { display:grid; direction:ltr; grid-template-columns:minmax(0,650px) auto; gap:clamp(8px,2vw,24px); max-width:770px; align-items:center; }
+.province-logo-side { justify-self:center; }
+.province-logo-side .mac-dock-wrap--vertical .mac-dock { --logo-size:54px; flex-direction:column; align-items:center; gap:7px; padding:10px; border-radius:17px; }
+.mac-dock-wrap--vertical .mac-dock-item img { transform-origin:center center; }
+.province-logo-side .mac-dock-wrap--vertical .mac-dock-label { left:auto; right:calc(100% + 8px); bottom:auto; transform:translateY(-50%); max-width:min(270px,65vw); }
+.province-logo-side .mac-dock-wrap--vertical .mac-dock-label[data-visible=true] { transform:translateY(-50%); }
+@media(max-width:600px) {
+ .province-map-composition { grid-template-columns:minmax(0,1fr) auto; gap:4px; }
+ .province-logo-side .mac-dock-wrap--vertical .mac-dock { --logo-size:44px; gap:3px; padding:5px; border-radius:13px; }
+}
+
+/* Magnify only the pointed (or keyboard-focused) logo, without shifting
+   or scaling the neighbouring marks. */
+.mac-dock-item[data-magnified=true] { z-index:2; }
+.mac-dock-item[data-magnified=true] img { transform:translateX(-125%) scale(2.8); }
+/* Keep the final enlarged mark within the map panel on small screens. */
+.mac-dock-wrap--vertical .mac-dock-item:last-child[data-magnified=true] img { transform:translate(-125%,-60%) scale(2.8); }
+
+/* A quieter, translucent frame inspired by Minimal Dock; keep the official
+   logos, their sizing, placement and interaction unchanged. */
+.province-logo-side .mac-dock-wrap--vertical .mac-dock {
+  background:linear-gradient(150deg,rgba(91,105,124,.28),rgba(25,38,56,.48));
+  border:1px solid rgba(225,207,167,.22);
+  box-shadow:0 7px 20px rgba(0,0,0,.14),inset 0 1px 0 rgba(255,255,255,.06);
+  -webkit-backdrop-filter:blur(12px);
+  backdrop-filter:blur(12px);
+}
+
+/* Every provincial unit has a real local, compressed landmark photograph.
+   Dark overlays preserve the gold-on-navy identity and clear text contrast. */
+.province-public-hero.province-photo-hero { position:relative; isolation:isolate; overflow:hidden; display:flex; align-items:center; min-height:300px; margin:1.5rem auto 2rem; padding:clamp(1.5rem,4vw,3.5rem); text-align:right; border:1px solid rgba(226,190,126,.28); border-radius:24px; background:#101e30; box-shadow:0 18px 45px rgba(0,0,0,.25); }
+.province-hero-image,.province-hero-shade { position:absolute; inset:0; width:100%; height:100%; }
+.province-hero-image { object-fit:cover; object-position:center 48%; z-index:-3; }
+.province-hero-shade { z-index:-2; background:linear-gradient(270deg,rgba(7,16,29,.97) 0%,rgba(10,21,35,.89) 29%,rgba(10,20,34,.44) 68%,rgba(10,20,34,.30) 100%),linear-gradient(0deg,rgba(8,17,30,.68),transparent 55%); }
+.province-hero-content { position:relative; z-index:1; max-width:65%; padding-bottom:1.25rem; }
+.province-photo-hero .province-overline { color:#f3d69b; }
+.province-photo-hero h1 { color:#fff2d0; text-shadow:0 2px 12px #000a; }
+.province-photo-hero .province-hero-description { margin:.65rem 0 1.1rem; color:#e0e7eb; }
+.province-photo-hero .province-total { display:inline-flex; color:#fff1d0; background:rgba(13,26,42,.72); border:1px solid rgba(234,195,125,.38); border-radius:999px; padding:.35rem .8rem; }
+.province-photo-caption { position:absolute; z-index:2; left:1rem; bottom:.85rem; display:flex; align-items:center; gap:.6rem; flex-wrap:wrap; color:#fff; font-size:.75rem; }
+.province-photo-caption > span { display:inline-flex; align-items:center; gap:.2rem; padding:.3rem .55rem; background:rgba(6,16,29,.78); border-radius:8px; }
+.province-photo-credit { position:relative; }
+.province-photo-credit summary { cursor:pointer; padding:.3rem .5rem; border-radius:8px; background:rgba(6,16,29,.78); color:#f8e7c5; }
+.province-photo-credit summary:focus-visible,.province-photo-credit a:focus-visible { outline:2px solid #f2cc86; outline-offset:2px; }
+.province-photo-credit div { position:absolute; left:0; bottom:calc(100% + 6px); width:min(300px,80vw); padding:.75rem; border:1px solid #bc9b68; border-radius:10px; background:#101e30; color:white; line-height:1.8; overflow-wrap:anywhere; }
+.province-photo-credit a { color:#ffdc96; text-decoration:underline; text-underline-offset:3px; }
+@media(max-width:600px) {
+ .province-public-hero.province-photo-hero { min-height:280px; padding:1.3rem; align-items:flex-start; border-radius:18px; }
+ .province-hero-content { max-width:100%; padding-bottom:3rem; }
+ .province-hero-shade { background:linear-gradient(270deg,rgba(7,16,29,.95),rgba(10,21,35,.72) 65%,rgba(10,20,34,.52)),linear-gradient(0deg,rgba(8,17,30,.7),transparent 55%); }
+ .province-photo-caption { left:.7rem; right:.7rem; bottom:.65rem; }
+ .province-photo-credit div { left:auto; right:0; }
+}
+@media(min-width:601px) { .province-hero-image { object-position:center bottom; } }
+@media(min-width:601px) {
+ .province-photo-hero[data-province-hero="isfahan"] .province-hero-image { object-position:center 88%; }
+ .province-photo-hero[data-province-hero="golestan"] .province-hero-image { object-position:center top; }
+ .province-photo-hero[data-province-hero="fars"] .province-hero-image { object-position:center 32%; }
+}
+@media(max-width:600px) {
+ .province-photo-credit { position:static; }
+ .province-photo-credit div { left:0; right:0; width:auto; }
+}
+@media(min-width:601px) { .province-photo-hero[data-province-hero="hamadan"] .province-hero-image { object-position:center 30%; } }
+
+/* Full-bleed provincial cover, including the back action on the photograph. */
+.province-public { padding-top:0; }
+.province-public-hero.province-photo-hero { width:100%; max-width:none; min-height:370px; margin:0 0 2rem; padding:5.4rem clamp(1.25rem,5vw,4.5rem) 3.6rem; border-radius:0; }
+.province-hero-back { position:absolute; z-index:3; top:1.1rem; right:clamp(1.25rem,5vw,4.5rem); background:rgba(8,18,31,.72); border:1px solid rgba(232,200,147,.4); border-radius:12px; color:#fff; }
+.province-hero-back:focus-visible { outline:2px solid #ffe3aa; outline-offset:3px; }
+.province-photo-caption { left:clamp(1rem,5vw,4.5rem); }
+.province-image-attribution { margin-top:2.5rem; color:#aab8c6; font-size:.75rem; line-height:1.9; overflow-wrap:anywhere; }
+.province-image-attribution a { color:#e6c993; text-decoration:underline; text-underline-offset:3px; }
+.province-image-attribution a:focus-visible { outline:2px solid #ffe3aa; outline-offset:3px; }
+@media(max-width:600px) {
+ .province-public { padding-top:0; }
+ .province-public-hero.province-photo-hero { min-height:350px; border-radius:0; padding:5rem 1.15rem 4.25rem; }
+ .province-hero-back { top:1rem; right:1.15rem; }
+ .province-photo-caption { left:.85rem; right:auto; }
+ .province-hero-content { padding-bottom:0; }
+}
+.province-credit-link { color:#aebccb; font-size:12px; text-decoration:underline; text-underline-offset:3px; }
+.province-credit-link:focus-visible { outline:2px solid #ffe3aa; outline-offset:3px; }
+
+/* Full-bleed photographs: no letterboxing, blurred copies, or artificial
+   backgrounds. Each focal point can be tuned for the landmark. */
+.mac-dock-item { touch-action:manipulation; }
+.province-public-hero.province-photo-hero { min-height:clamp(390px,32vw,470px); }
+.province-public-hero.province-photo-hero .province-hero-image {
+  position:absolute; inset:0; width:100%; height:100%; max-width:none; max-height:none;
+  object-fit:cover; object-position:var(--hero-x,50%) var(--hero-y,48%); transform:none; mask-image:none; -webkit-mask-image:none;
+}
+.province-hero-shade { background:linear-gradient(270deg,rgba(7,16,29,.93) 0%,rgba(10,21,35,.76) 28%,rgba(10,20,34,.18) 72%,rgba(10,20,34,.12) 100%),linear-gradient(0deg,rgba(8,17,30,.42),transparent 48%); }
+.province-photo-hero[data-province-hero="isfahan"] { --hero-y:88%; }
+.province-photo-hero[data-province-hero="golestan"] { --hero-y:4%; --hero-x:28%; }
+.province-photo-hero[data-province-hero="hamadan"] { --hero-y:14%; }
+.province-photo-hero[data-province-hero="ardabil"] { --hero-y:30%; }
+.province-photo-hero[data-province-hero="ilam"] { --hero-y:30%; }
+.province-photo-hero[data-province-hero="lorestan"] { --hero-y:32%; }
+.province-photo-hero[data-province-hero="north-khorasan"] { --hero-y:28%; }
+.province-photo-hero[data-province-hero="yazd"] { --hero-y:25%; }
+.province-photo-hero[data-province-hero="tehran-city"] { --hero-y:59%; }
+.province-photo-hero[data-province-hero="zanjan"] { --hero-y:43%; }
+.province-photo-hero[data-province-hero="qazvin"] { --hero-y:25%; }
+@media(max-width:600px) {
+ .province-public-hero.province-photo-hero { min-height:350px; }
+ .province-hero-shade { background:linear-gradient(270deg,rgba(7,16,29,.87),rgba(10,21,35,.54) 68%,rgba(10,20,34,.32)),linear-gradient(0deg,rgba(8,17,30,.48),transparent 50%); }
+ .province-photo-hero[data-province-hero="golestan"] { --hero-x:25%; }
+ .province-photo-hero[data-province-hero="hamadan"] { --hero-x:51%; }
+ .province-photo-hero[data-province-hero="isfahan"] { --hero-x:50%; }
+ .province-photo-hero[data-province-hero="fars"] { --hero-x:50%; }
+}

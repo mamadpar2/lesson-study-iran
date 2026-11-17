@@ -1,0 +1,290 @@
+{
+  "east-azerbaijan": {
+    "landmark": "بازار تاریخی تبریز",
+    "source": "https://commons.wikimedia.org/wiki/File:Mozaffariyeh,_Grand_Bazzar_of_Tabriz,_IRAN.jpg",
+    "license": "CC BY-SA 4.0",
+    "author": "Navid Alizadeh Sadighi",
+    "image": "/images/province-headers/east-azerbaijan.webp",
+    "file": "Mozaffariyeh,_Grand_Bazzar_of_Tabriz,_IRAN.jpg",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+  },
+  "west-azerbaijan": {
+    "landmark": "قره‌کلیسا",
+    "source": "https://commons.wikimedia.org/wiki/File:Saint_Thaddeus_Monastery,_Iran,_northwestern_view.jpg",
+    "license": "CC BY-SA 3.0",
+    "author": "نام عکاس ذکر نشده؛ منبع: armenica.org",
+    "image": "/images/province-headers/west-azerbaijan.webp",
+    "file": "Saint_Thaddeus_Monastery,_Iran,_northwestern_view.jpg",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "ardabil": {
+    "landmark": "بقعه شیخ صفی‌الدین اردبیلی",
+    "source": "https://commons.wikimedia.org/wiki/File:Sheikh_Safi_Al_Din_Ardabili_Tomb.jpg",
+    "license": "CC BY-SA 4.0",
+    "author": "MAF70",
+    "image": "/images/province-headers/ardabil.webp",
+    "file": "Sheikh_Safi_Al_Din_Ardabili_Tomb.jpg",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+  },
+  "isfahan": {
+    "landmark": "میدان نقش جهان",
+    "source": "https://commons.wikimedia.org/wiki/File:Naqsh-i_Jahan_Square,_Jan._2018.jpg",
+    "license": "CC BY-SA 4.0",
+    "author": "احمد جمالی مقدم",
+    "image": "/images/province-headers/isfahan.webp",
+    "file": "Naqsh-i_Jahan_Square,_Jan._2018.jpg",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+  },
+  "alborz": {
+    "landmark": "سد امیرکبیر",
+    "source": "https://commons.wikimedia.org/wiki/File:Karaj_dam.jpg",
+    "license": "CC BY-SA 2.0",
+    "author": "ninara",
+    "image": "/images/province-headers/alborz.webp",
+    "file": "Karaj_dam.jpg",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/"
+  },
+  "ilam": {
+    "landmark": "قلعه والی ایلام",
+    "source": "https://commons.wikimedia.org/wiki/File:1798_%D9%82%D9%84%D8%B9%D9%87_%D9%88%D8%A7%D9%84%DB%8C_%D8%A7%DB%8C%D9%84%D8%A7%D9%85.jpg",
+    "license": "CC BY-SA 4.0",
+    "author": "Mehrdad Jamali firouzabadi",
+    "image": "/images/province-headers/ilam.webp",
+    "file": "1798 قلعه والی ایلام.jpg",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+  },
+  "bushehr": {
+    "landmark": "بوشهر",
+    "source": "https://commons.wikimedia.org/wiki/File:Bushehr_City.jpg",
+    "license": "CC BY 4.0",
+    "author": "Hossein Heidarpour",
+    "image": "/images/province-headers/bushehr.webp",
+    "file": "Bushehr_City.jpg",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "tehran-city": {
+    "landmark": "برج آزادی",
+    "source": "https://commons.wikimedia.org/wiki/File:%D9%85%DB%8C%D8%AF%D8%A7%D9%86_%D8%A2%D8%B2%D8%A7%D8%AF%DB%8C_1.jpg",
+    "license": "CC BY-SA 4.0",
+    "author": "Homam.n",
+    "image": "/images/province-headers/tehran-city-v2.webp",
+    "file": "میدان آزادی 1.jpg",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+  },
+  "tehran-counties": {
+    "landmark": "حرم حضرت عبدالعظیم",
+    "source": "https://commons.wikimedia.org/wiki/File:Shah_Abdol_Azim_shrine.jpg",
+    "license": "Public domain",
+    "author": "User:Agha Nader",
+    "image": "/images/province-headers/tehran-counties.webp",
+    "file": "Shah Abdol Azim shrine.jpg",
+    "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/"
+  },
+  "chaharmahal": {
+    "landmark": "تالاب چغاخور",
+    "source": "https://commons.wikimedia.org/wiki/File:Choghakhor.jpg",
+    "license": "CC BY-SA 4.0",
+    "author": "Ehsantaebi",
+    "image": "/images/province-headers/chaharmahal.webp",
+    "file": "Choghakhor.jpg",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+  },
+  "south-khorasan": {
+    "landmark": "ارگ بیرجند",
+    "source": "https://commons.wikimedia.org/wiki/File:%D9%82%D9%84%D8%B9%D9%87_%D8%A8%DB%8C%D8%B1%D8%AC%D9%86%D8%AF-2.jpg",
+    "license": "CC BY-SA 4.0",
+    "author": "Soroush.javadian",
+    "image": "/images/province-headers/south-khorasan.webp",
+    "file": "قلعه_بیرجند-2.jpg",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+  },
+  "razavi-khorasan": {
+    "landmark": "حرم امام رضا",
+    "source": "https://commons.wikimedia.org/wiki/File:%D8%B5%D8%AD%D9%86_%D8%A7%DB%8C%D9%88%D8%A7%D9%86_%D8%B7%D9%84%D8%A7_%D9%88_%D8%B3%D9%82%D8%A7%D8%AE%D8%A7%D9%86%D9%87.jpg",
+    "license": "CC BY-SA 4.0",
+    "author": "AmirVarastehAhmadi",
+    "image": "/images/province-headers/razavi-khorasan.webp",
+    "file": "صحن_ایوان_طلا_و_سقاخانه.jpg",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+  },
+  "north-khorasan": {
+    "landmark": "آیینه‌خانه مفخم بجنورد",
+    "source": "https://commons.wikimedia.org/wiki/File:Mofakham_Mirror_House_by_Arashk_Rajabpour.jpg",
+    "license": "CC BY-SA 3.0",
+    "author": "Arashk rp2",
+    "image": "/images/province-headers/north-khorasan.webp",
+    "file": "Mofakham_Mirror_House_by_Arashk_Rajabpour.jpg",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "khuzestan": {
+    "landmark": "سازه‌های آبی شوشتر",
+    "source": "https://commons.wikimedia.org/wiki/File:Shushtar_Historical_Hydraulic_System_Panorama.jpg",
+    "license": "CC BY-SA 4.0",
+    "author": "Iman Yari",
+    "image": "/images/province-headers/khuzestan.webp",
+    "file": "Shushtar_Historical_Hydraulic_System_Panorama.jpg",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+  },
+  "zanjan": {
+    "landmark": "گنبد سلطانیه",
+    "source": "https://commons.wikimedia.org/wiki/File:Soltaniyeh_Dome_-_panorama.jpg",
+    "license": "CC BY-SA 4.0",
+    "author": "Mehradmoslemian",
+    "image": "/images/province-headers/zanjan.webp",
+    "file": "Soltaniyeh Dome - panorama.jpg",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+  },
+  "semnan": {
+    "landmark": "مسجد جامع سمنان",
+    "source": "https://commons.wikimedia.org/wiki/File:Friday_Mosque._Semnan_7.jpg",
+    "license": "CC BY-SA 4.0",
+    "author": "Arosha-photo (Reza Sobhani)",
+    "image": "/images/province-headers/semnan.webp",
+    "file": "Friday Mosque. Semnan 7.jpg",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+  },
+  "sistan-baluchestan": {
+    "landmark": "شهر سوخته",
+    "source": "https://commons.wikimedia.org/wiki/File:C20R1002.jpg",
+    "license": "CC BY-SA 4.0",
+    "author": "Amirkhan33",
+    "image": "/images/province-headers/sistan-baluchestan.webp",
+    "file": "C20R1002.jpg",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+  },
+  "fars": {
+    "landmark": "تخت جمشید",
+    "source": "https://commons.wikimedia.org/wiki/File:2018-09-21_Iran,_Persepolis,_Tachara_(from_the_southeast).jpg",
+    "license": "CC BY 4.0",
+    "author": "Laurens R. Krol",
+    "image": "/images/province-headers/fars.webp",
+    "file": "2018-09-21_Iran,_Persepolis,_Tachara_(from_the_southeast).jpg",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "qazvin": {
+    "landmark": "قلعه الموت",
+    "source": "https://commons.wikimedia.org/wiki/File:Iran_-_Qazvin_-_Alamout_Castle_-_panoramio_(1).jpg",
+    "license": "CC BY 3.0",
+    "author": "Alireza Javaheri",
+    "image": "/images/province-headers/qazvin.webp",
+    "file": "Iran_-_Qazvin_-_Alamout_Castle_-_panoramio_(1).jpg",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0/"
+  },
+  "qom": {
+    "landmark": "حرم حضرت معصومه",
+    "source": "https://commons.wikimedia.org/wiki/File:Qom,_Fatima_Masumeh_Shrine_panorama.jpg",
+    "license": "CC BY-SA 4.0",
+    "author": "Mohammad mahdi P9432",
+    "image": "/images/province-headers/qom-v2.webp",
+    "file": "Qom, Fatima Masumeh Shrine panorama.jpg",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+  },
+  "kordestan": {
+    "landmark": "روستای پالنگان",
+    "source": "https://commons.wikimedia.org/wiki/File:Palangan3.jpg",
+    "license": "CC BY-SA 4.0",
+    "author": "Nazariamirhossein",
+    "image": "/images/province-headers/kordestan.webp",
+    "file": "Palangan3.jpg",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+  },
+  "kerman": {
+    "landmark": "باغ شازده ماهان",
+    "source": "https://commons.wikimedia.org/wiki/File:%D8%A8%D8%A7%D8%BA_%D8%B4%D8%A7%D9%87%D8%B2%D8%A7%D8%AF%D9%87-%D9%85%D8%A7%D9%87%D8%A7%D9%86-%DA%A9%D8%B1%D9%85%D8%A7%D9%86.jpg",
+    "license": "CC BY-SA 4.0",
+    "author": "Pourjafari",
+    "image": "/images/province-headers/kerman.webp",
+    "file": "باغ_شاهزاده-ماهان-کرمان.jpg",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+  },
+  "kermanshah": {
+    "landmark": "طاق بستان",
+    "source": "https://commons.wikimedia.org/wiki/File:%D8%AA%D8%A7%D9%82%E2%80%8C%D8%A8%D8%B3%D8%AA%D8%A7%D9%86.jpg",
+    "license": "CC BY-SA 4.0",
+    "author": "Ali Heidari - علی حیدری",
+    "image": "/images/province-headers/kermanshah.webp",
+    "file": "تاق‌بستان.jpg",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+  },
+  "kohgiluyeh-boyerahmad": {
+    "landmark": "آبشار یاسوج",
+    "source": "https://commons.wikimedia.org/wiki/File:%D8%A8%D8%A7%D9%84%D8%A7%DB%8C_%D8%A2%D8%A8%D8%B4%D8%A7%D8%B1_%DB%8C%D8%A7%D8%B3%D9%88%D8%AC_High_Waterfall_Yasuj_-_panoramio.jpg",
+    "license": "CC BY-SA 3.0",
+    "author": "Milad Gerami",
+    "image": "/images/province-headers/kohgiluyeh-boyerahmad.webp",
+    "file": "بالای آبشار یاسوج High Waterfall Yasuj - panoramio.jpg",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "golestan": {
+    "landmark": "گنبد قابوس",
+    "source": "https://commons.wikimedia.org/wiki/File:Gonbad-e_Qabus_tower2017-1.jpg",
+    "license": "CC BY-SA 4.0",
+    "author": "Farzaaaad2000",
+    "image": "/images/province-headers/golestan.webp",
+    "file": "Gonbad-e Qabus tower2017-1.jpg",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+  },
+  "gilan": {
+    "landmark": "ماسوله",
+    "source": "https://commons.wikimedia.org/wiki/File:Masuleh,_Fuman_County,_Gilan_Province,_Iran.jpg",
+    "license": "CC BY-SA 4.0",
+    "author": "Hanieh.smd",
+    "image": "/images/province-headers/gilan.webp",
+    "file": "Masuleh,_Fuman_County,_Gilan_Province,_Iran.jpg",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+  },
+  "lorestan": {
+    "landmark": "قلعه فلک‌الافلاک",
+    "source": "https://commons.wikimedia.org/wiki/File:Falakolaflak.jpg",
+    "license": "CC BY 2.0",
+    "author": "ninara",
+    "image": "/images/province-headers/lorestan.webp",
+    "file": "Falakolaflak.jpg",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0/"
+  },
+  "mazandaran": {
+    "landmark": "باداب سورت",
+    "source": "https://commons.wikimedia.org/wiki/File:Badab-e_Surt_Samaee.jpg",
+    "license": "CC BY 3.0",
+    "author": "Samaee",
+    "image": "/images/province-headers/mazandaran.webp",
+    "file": "Badab-e_Surt_Samaee.jpg",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0/"
+  },
+  "markazi": {
+    "landmark": "بازار اراک",
+    "source": "https://commons.wikimedia.org/wiki/File:Bazar_Arak1.jpg",
+    "license": "CC BY-SA 4.0",
+    "author": "Kiantavakoli",
+    "image": "/images/province-headers/markazi.webp",
+    "file": "Bazar_Arak1.jpg",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+  },
+  "hormozgan": {
+    "landmark": "جزیره هرمز",
+    "source": "https://commons.wikimedia.org/wiki/File:Iran%27s_Rainbow_Island.jpeg",
+    "license": "Public domain",
+    "author": "NASA Earth Observatory image by Lauren Dauphin, using Landsat data from the U.S. Geological Survey. Story by Adam Voiland.",
+    "image": "/images/province-headers/hormozgan.webp",
+    "file": "Iran's_Rainbow_Island.jpeg",
+    "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/"
+  },
+  "hamadan": {
+    "landmark": "آرامگاه بوعلی سینا",
+    "source": "https://commons.wikimedia.org/wiki/File:Avicenna-Mausoleum-2.jpg",
+    "license": "CC BY-SA 4.0",
+    "author": "Saba Garshasbi",
+    "image": "/images/province-headers/hamadan.webp",
+    "file": "Avicenna-Mausoleum-2.jpg",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+  },
+  "yazd": {
+    "landmark": "مجموعه امیرچخماق",
+    "source": "https://commons.wikimedia.org/wiki/File:Iran_-_Yazd_-_Amir_Chakmaq_Complex.jpg",
+    "license": "CC BY 3.0",
+    "author": "Alireza Javaheri",
+    "image": "/images/province-headers/yazd.webp",
+    "file": "Iran_-_Yazd_-_Amir_Chakmaq_Complex.jpg",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0/"
+  }
+}

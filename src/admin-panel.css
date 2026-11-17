@@ -1,0 +1,334 @@
+/* Admin and province panels: reference-site glass cards, deep navy canvas, gold active state. */
+.admin-layout,
+.province-admin-shell {
+  --panel-bg: rgba(14, 32, 46, .78);
+  --panel-bg-solid: #102333;
+  --panel-line: rgba(170, 213, 228, .14);
+  --panel-line-strong: rgba(201, 162, 39, .32);
+  --panel-text: #edf7f9;
+  --panel-muted: #9bb4bd;
+  --panel-cyan: #55e1dc;
+  --panel-gold: #e8c547;
+  --panel-gold-deep: #c9a227;
+  --panel-violet: #b99cff;
+  --panel-green: #79e3ac;
+  color: var(--panel-text);
+  font-family: 'B Nazanin', 'BNazanin', Tahoma, sans-serif;
+}
+
+.admin-layout {
+  background:
+    radial-gradient(circle at 82% 0%, rgba(201, 162, 39, .12), transparent 28%),
+    radial-gradient(circle at 12% 88%, rgba(85, 225, 220, .07), transparent 24%),
+    linear-gradient(180deg, #08172b 0%, #071321 100%) !important;
+}
+
+.admin-sidebar {
+  background: rgba(5, 15, 29, .92) !important;
+  border-left: 1px solid var(--panel-line-strong) !important;
+  box-shadow: -18px 0 50px rgba(0, 0, 0, .18);
+}
+
+.sidebar-brand {
+  border-bottom-color: rgba(201, 162, 39, .24) !important;
+  background: rgba(5, 15, 29, .35);
+}
+
+.sidebar-brand > div:first-child > div:first-child {
+  color: #111f35 !important;
+  background: linear-gradient(135deg, #e8c547, #c9a227) !important;
+  box-shadow: 0 10px 26px rgba(201, 162, 39, .2) !important;
+}
+
+.sidebar-brand h2 {
+  font-family: 'B Titr', 'BTitr', 'B Nazanin', sans-serif;
+  letter-spacing: -.25px;
+}
+
+.admin-sidebar .admin-menu-btn {
+  min-height: 44px;
+  padding: 10px 12px;
+  color: #c4d6da;
+  border: 1px solid transparent;
+  border-radius: 12px;
+  transition: color .18s ease, background .18s ease, border-color .18s ease, transform .18s ease;
+}
+
+.admin-sidebar .admin-menu-btn:hover {
+  color: #fff;
+  border-color: rgba(85, 225, 220, .18);
+  background: rgba(85, 225, 220, .07);
+  transform: translateX(-2px);
+}
+
+.admin-sidebar .admin-menu-btn.active {
+  color: #111f35;
+  border-color: rgba(232, 197, 71, .9);
+  background: linear-gradient(135deg, #e8c547, #c9a227) !important;
+  box-shadow: 0 10px 25px rgba(201, 162, 39, .16);
+}
+
+.admin-sidebar .admin-menu-btn.active svg { color: #132239 !important; }
+.admin-sidebar .admin-menu-btn.active .badge-count {
+  color: #fff;
+  background: rgba(7, 19, 33, .25);
+}
+
+.admin-sidebar .badge-count {
+  min-width: 25px;
+  padding: 2px 7px;
+  color: var(--panel-cyan);
+  text-align: center;
+  border: 1px solid rgba(85, 225, 220, .14);
+  background: rgba(85, 225, 220, .08);
+}
+
+.admin-sidebar .menu-group-label {
+  color: #7f9da7 !important;
+  letter-spacing: .2px;
+}
+
+.admin-sidebar > .px-5.py-2\.5 {
+  border-bottom-color: rgba(201, 162, 39, .16) !important;
+  background: rgba(5, 15, 29, .62) !important;
+}
+
+.admin-sidebar .sidebar-footer {
+  border-top-color: rgba(201, 162, 39, .2) !important;
+  background: rgba(5, 15, 29, .8) !important;
+}
+
+.admin-sidebar .sidebar-footer button:first-child {
+  color: #d8e4e4 !important;
+  border: 1px solid rgba(85, 225, 220, .18);
+  background: rgba(85, 225, 220, .07) !important;
+}
+
+.admin-sidebar .sidebar-footer button:first-child:hover {
+  color: var(--panel-cyan) !important;
+  background: rgba(85, 225, 220, .13) !important;
+}
+
+.admin-main {
+  background: transparent !important;
+}
+
+.admin-page-header {
+  min-height: 112px;
+  padding: 20px 24px;
+  border: 1px solid rgba(85, 225, 220, .18) !important;
+  border-radius: 22px;
+  background: linear-gradient(135deg, #0b2d55, #0a63b0 70%, #237cbd);
+  box-shadow: 0 24px 50px -24px rgba(10, 99, 176, .65);
+}
+
+.admin-page-header h1 {
+  color: #fff;
+  font-family: 'B Titr', 'BTitr', 'B Nazanin', sans-serif;
+  font-size: clamp(1.35rem, 2.1vw, 1.8rem);
+  line-height: 1.6;
+}
+
+.admin-page-header p { color: rgba(255, 255, 255, .84) !important; font-size: 15px; }
+.admin-page-header button {
+  color: #102333 !important;
+  border: 1px solid rgba(255, 255, 255, .4) !important;
+  background: linear-gradient(135deg, #e8c547, #c9a227) !important;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, .15);
+}
+.admin-page-header button:hover { filter: brightness(1.06); }
+
+.admin-layout .dusk-card {
+  color: var(--panel-text);
+  border-color: var(--panel-line) !important;
+  border-radius: 20px !important;
+  background: linear-gradient(155deg, rgba(16, 35, 51, .94), rgba(10, 25, 40, .9)) !important;
+  box-shadow: 0 18px 45px rgba(0, 0, 0, .16);
+}
+
+.admin-layout .dusk-input {
+  color: #edf7f9;
+  border-color: rgba(170, 213, 228, .2);
+  border-radius: 12px;
+  background: rgba(5, 15, 29, .68);
+}
+.admin-layout .dusk-input:focus {
+  border-color: rgba(85, 225, 220, .72);
+  box-shadow: 0 0 0 3px rgba(85, 225, 220, .12);
+}
+
+.admin-login-wrapper,
+.province-admin-shell {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 73% 13%, rgba(74, 202, 207, .13), transparent 30%),
+    radial-gradient(circle at 18% 85%, rgba(121, 81, 205, .13), transparent 30%),
+    linear-gradient(180deg, #091522, #07121d) !important;
+}
+
+.admin-login-wrapper::before,
+.province-admin-shell:has(.province-login-card)::before {
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  content: '';
+  opacity: .35;
+  pointer-events: none;
+  background-image: linear-gradient(rgba(120, 190, 201, .055) 1px, transparent 1px), linear-gradient(90deg, rgba(120, 190, 201, .055) 1px, transparent 1px);
+  background-size: 54px 54px;
+  mask-image: linear-gradient(to bottom, #000, transparent);
+}
+
+.admin-login-card,
+.province-login-card {
+  width: min(500px, 100%);
+  padding: 40px !important;
+  border: 1px solid rgba(137, 205, 211, .22) !important;
+  border-radius: 27px !important;
+  background: rgba(13, 32, 46, .9) !important;
+  box-shadow: 0 30px 90px rgba(0, 0, 0, .34), 0 0 45px rgba(85, 225, 220, .06) !important;
+  backdrop-filter: blur(22px);
+}
+
+.admin-login-card h1,
+.province-login-card h1 {
+  color: #f3fbfc;
+  font-family: 'B Titr', 'BTitr', 'B Nazanin', sans-serif;
+  font-size: 30px;
+  line-height: 1.7;
+}
+.admin-login-card p,
+.province-login-card p { color: #a9c0c7 !important; font-size: 16px; line-height: 2; }
+.admin-login-card .login-icon-pod {
+  color: var(--panel-cyan) !important;
+  border: 1px solid rgba(85, 225, 220, .2);
+  background: rgba(85, 225, 220, .09) !important;
+  box-shadow: inset 0 0 25px rgba(85, 225, 220, .05);
+}
+.admin-login-card .login-glow-aura {
+  background: radial-gradient(circle, rgba(85, 225, 220, .16), transparent 70%) !important;
+}
+.admin-login-card input,
+.province-login-card input {
+  min-height: 54px;
+  color: #edf7f9 !important;
+  border: 1px solid rgba(170, 213, 228, .22) !important;
+  border-radius: 12px !important;
+  background: rgba(5, 15, 29, .7) !important;
+  font-size: 17px !important;
+}
+.admin-login-card input:focus,
+.province-login-card input:focus {
+  border-color: rgba(85, 225, 220, .7) !important;
+  box-shadow: 0 0 0 3px rgba(85, 225, 220, .12);
+}
+.admin-login-card form > button[type='submit'],
+.province-login-card button[type='submit'] {
+  min-height: 54px;
+  color: #071b23 !important;
+  border-radius: 12px !important;
+  background: linear-gradient(135deg, #6af1e7, #42c9ce) !important;
+  box-shadow: 0 10px 26px rgba(50, 207, 202, .2);
+}
+.admin-login-card form > button[type='submit']:hover,
+.province-login-card button[type='submit']:hover { filter: brightness(1.06); }
+.admin-login-card form > button:last-child,
+.province-login-card a { color: var(--panel-cyan) !important; }
+
+/* Province workspace shares the same dashboard palette and card rhythm. */
+.province-admin-shell:not(:has(.province-login-card)) {
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at 82% 0%, rgba(201, 162, 39, .11), transparent 28%),
+    radial-gradient(circle at 12% 88%, rgba(85, 225, 220, .07), transparent 24%),
+    linear-gradient(180deg, #08172b 0%, #071321 100%) !important;
+}
+.province-admin-shell > div { position: relative; z-index: 1; }
+.province-panel-header {
+  border-color: var(--panel-line-strong) !important;
+  border-radius: 22px !important;
+  background: linear-gradient(135deg, #0b2d55, #0a63b0 70%, #237cbd) !important;
+  box-shadow: 0 24px 50px -24px rgba(10, 99, 176, .48);
+}
+.province-panel-header > div:first-child {
+  color: #102333 !important;
+  border-color: rgba(232, 197, 71, .45) !important;
+  background: linear-gradient(135deg, #e8c547, #c9a227) !important;
+}
+.province-panel-header > div:first-child svg { color: #102333 !important; }
+.province-panel-header h1 { font-family: 'B Titr', 'BTitr', 'B Nazanin', sans-serif; }
+.province-panel-header p { color: rgba(255, 255, 255, .82) !important; }
+.province-panel-header button { border-color: rgba(255, 255, 255, .24) !important; background: rgba(5, 15, 29, .24) !important; }
+.province-panel-nav {
+  border-color: var(--panel-line-strong) !important;
+  border-radius: 22px !important;
+  background: rgba(5, 15, 29, .86) !important;
+  box-shadow: 0 18px 45px rgba(0, 0, 0, .16);
+}
+.province-section-link { min-height: 48px; }
+.province-section-link:hover:not(.active) { background: rgba(85, 225, 220, .07) !important; }
+.province-section-link.active {
+  color: #111f35 !important;
+  border-color: rgba(232, 197, 71, .9) !important;
+  background: linear-gradient(135deg, #e8c547, #c9a227) !important;
+  box-shadow: 0 10px 25px rgba(201, 162, 39, .13);
+}
+.province-section-link.active > span:first-child {
+  color: #102333 !important;
+  background: rgba(255, 255, 255, .28) !important;
+}
+.province-section-link.active > span:last-child { color: #102333 !important; background: rgba(255, 255, 255, .32) !important; }
+.province-admin-shell main > section {
+  border-color: var(--panel-line) !important;
+  border-radius: 22px !important;
+  background: linear-gradient(155deg, rgba(16, 35, 51, .94), rgba(10, 25, 40, .9)) !important;
+  box-shadow: 0 18px 45px rgba(0, 0, 0, .16);
+}
+.province-admin-shell footer { border-top-color: rgba(201, 162, 39, .2) !important; }
+
+@media (max-width: 760px) {
+  .admin-page-header { align-items: flex-start; flex-direction: column; padding: 17px; border-radius: 18px; }
+  .admin-page-header h1 { font-size: 22px; }
+  .admin-page-header p { font-size: 14px; }
+  .admin-login-card,
+  .province-login-card { padding: 29px 22px !important; border-radius: 22px !important; }
+  .province-panel-header { border-radius: 18px !important; }
+  .province-panel-nav { border-radius: 18px !important; }
+}
+
+/* Keep controls comfortable to read in both admin and provincial dashboards. */
+.admin-layout,
+.province-admin-shell {
+  font-size: 17px;
+}
+
+.admin-layout :where(p, label, button, a, li, small, summary, span),
+.province-admin-shell :where(p, label, button, a, li, small, summary, span) {
+  font-size: max(15px, 1em) !important;
+  line-height: 1.65;
+  overflow-wrap: anywhere;
+}
+
+.admin-layout :where(input, textarea, select),
+.province-admin-shell :where(input, textarea, select) {
+  font-size: max(16px, 1em) !important;
+}
+
+.admin-layout :where([class~="text-xs"], [class~="text-[10px]"], [class~="text-[11px]"], [class~="text-[12px]"]),
+.province-admin-shell :where([class~="text-xs"], [class~="text-[10px]"], [class~="text-[11px]"], [class~="text-[12px]"]) {
+  font-size: 15px !important;
+  line-height: 1.65 !important;
+}
+
+.admin-layout :where([class~="text-sm"]),
+.province-admin-shell :where([class~="text-sm"]) {
+  font-size: 16px !important;
+  line-height: 1.65 !important;
+}
+
+@media (max-width: 640px) {
+  .admin-layout,
+  .province-admin-shell { font-size: 16px; }
+}
